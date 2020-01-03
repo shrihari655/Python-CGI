@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration form</title>
+		<style>
+		form{
+		 font-family:comic sans MS;
+		 font-size:23px;
+		 font-weight:normal;
+		 font-style:italic;
+		 color:black;
+		 }
+		 body{
+		  background-image:url(images/sri.png);
+		 background-size:100%;
+		 }
+		 
+			
+			#sub{
+			background-color:#10af10;
+			border:0px;
+			outline:0px;
+			padding:3px 75px;
+			cursor:pointer;
+			border-radius:2px;
+			box-shadow:2px 2px 2px 0px rgba(0,0,0,0.5);
+			
+			font-size:20px;
+			font-weight:bold;
+			text-shadow:1px 1px 1px black;
+			color:white;
+			}
+			
+			#res{
+			background-color:#10af10;
+			border:0px;
+			outline:0px;
+			padding:3px 75px;
+			cursor:pointer;
+			border-radius:2px;
+			box-shadow:2px 2px 2px 0px rgba(0,0,0,0.5);
+			
+			font-size:20px;
+			font-weight:bold;
+			text-shadow:1px 1px 1px black;
+			color:white;
+			}
+		
+		
+		
+		
+		
+		</style>
+	</head>
+	<body>
+	<form action="register.cgi" method="post" name="signup" align="center" enctype="multipart/form-data">
+		<center><b>STUDENTS REGISTERATION FORM</b></center></br>
+		Name:
+		<input type="text" name="user"  required/>
+		</br></br>
+		
+		Password  : 
+		<input type="password" name="pwd" value="" required/>
+		<br/><br/>
+		
+		Gender  : 
+		<input type="radio" name="gen" value="m" /> Male
+		<input type="radio" name="gen" value="f" /> Female
+		<br/><br/>
+		
+		
+		Language  : 
+		<input type="checkbox" name="lang" value="k" /> Kannada
+		<input type="checkbox" name="lang" value="t" /> Tamil
+		<input type="checkbox" name="lang" value="h" /> Hindi
+		<input type="checkbox" name="lang" value="tl" /> Telugu
+		<br/><br/>
+		
+		
+		City :
+		<select name="city">
+			<option value="">Select City</option>
+			<option value="bnglr">Bangalore</option>
+			<option value="chen">Chennai</option>
+			<option value="mub">Mumbai</option>
+			<option value="dlhi">Delhi</option>
+		</select>
+		<br/><br/>
+		
+		Qualification :
+		<select name="qual">
+			<option value="">Select Qualification</option>
+			<optgroup label="Engineering">
+				<option value="101">ISE</option>
+				<option value="102">CSE</option>
+				<option value="103">ECE</option>
+			</optgroup>
+			<optgroup label="Bsc">
+				<option value="201">Botany</option>
+				<option value="202">Chemistry</option>
+				<option value="203">Maths</option>
+			</optgroup>
+		</select>
+		<br/><br/>
+		
+	
+		
+		
+		Address :
+		<textarea name="addr" cols="30" rows="7"></textarea>
+		<br/><br/>
+		
+		
+			
+			<input type="submit" id="sub" value="submit" />
+		
+			<input type="reset" id="res" value="clear" />
+		<br/><br/>
+		
+		
+		   
+	    
+        <a href='login.html'>Login</a>
+		
+		</form>
+		
+		
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		
+	</body>
+</html>
